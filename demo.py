@@ -50,7 +50,7 @@ def normalizeString(s: str):
     # print('step2->', s)
 
     # todo:1.3- 通过正则表达式将除 a-z.!? 之外的符号替换为空格 " "
-    s = re.sub(r"[^a-z\u4e00-\u9fa5 .!?。！？]+", r" ", s)
+    s = re.sub(r"[^a-z0-9 \u4e00-\u9fa5 .!?。！？]+", r" ", s)
     # print('step3->', s)
 
     return s
